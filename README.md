@@ -1,6 +1,7 @@
 # Hiago Leao's portfolio
 
-Next.js project with TypeScript, CSS Modules, and SVGR. The home screen is intentionally empty.
+Next.js project with TypeScript, CSS Modules, and SVGR. Includes the portfolio home and placeholder
+project and experience routes.
 
 ## Development
 

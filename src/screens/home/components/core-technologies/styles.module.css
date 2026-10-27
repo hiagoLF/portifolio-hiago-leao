@@ -1,0 +1,51 @@
+.section h2 {
+	margin: 0 0 12px 4px;
+	font: 11px/1.5 var(--font-mono);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--outline);
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 10px;
+}
+.grid li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 16px 6px;
+	border-radius: 12px;
+	background: var(--surface);
+	box-shadow: var(--card-shadow);
+	font: 11px/1.5 var(--font-mono);
+	text-align: center;
+	transition: box-shadow 200ms;
+}
+.grid li:hover {
+	box-shadow: 0 0 24px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.grid li > span:first-child {
+	display: grid;
+	place-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 9px;
+	color: var(--accent);
+	background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.grid svg {
+	width: 24px;
+	height: 24px;
+}
+@media (max-width: 760px) {
+	.grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+@media (max-width: 420px) {
+	.grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}

@@ -1,0 +1,12 @@
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+.tags li {
+	color: var(--accent);
+	background: color-mix(in srgb, var(--accent) 10%, transparent);
+	border-radius: 4px;
+	padding: 4px 7px;
+	font: 11px/1.5 var(--font-mono);
+}

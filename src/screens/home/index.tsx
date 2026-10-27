@@ -1,5 +1,75 @@
+import Image from "next/image";
+import Link from "next/link";
+import ArrowIcon from "@/assets/icons/arrow-right-alt.svg";
+import HistoryIcon from "@/assets/icons/history-edu.svg";
+import ProjectList from "@/components/project-list";
+import { designImages } from "@/constants/design-images";
+import { featuredProjects } from "@/constants/projects";
+import { socialLinks } from "@/constants/social-links";
+import CoreTechnologies from "@/screens/home/components/core-technologies";
+import CareerTimeline from "@/screens/home/components/career-timeline";
 import styles from "@/screens/home/styles.module.css";
 
 export default function HomeScreen() {
-	return <main className={styles.screen} />;
+	return (
+		<main id="main-content" className={styles.screen}>
+			<section className={styles.hero} aria-labelledby="profile-title">
+				<div className={styles.avatar}>
+					<Image
+						src={designImages[0]}
+						alt="Hiago Leão Ferreira"
+						width={176}
+						height={176}
+						unoptimized
+						priority
+					/>
+				</div>
+				<div className={styles.bio}>
+					<span className={styles.eyebrow}>Frontend Architecture & Mobile</span>
+					<h1 id="profile-title">Hiago Leão Ferreira</h1>
+					<p className={styles.role}>Senior Frontend Software Engineer</p>
+					<p className={styles.description}>
+						Senior Frontend Engineer with 5+ years building high-impact mobile and web applications
+						with React Native, React, and TypeScript. Specializing in fluid micro-interactions,
+						rock-solid design systems, and resilient engineering that scales teams and products.
+					</p>
+				</div>
+			</section>
+			<CoreTechnologies />
+			<section className={styles.section} aria-labelledby="projects-title">
+				<h2 id="projects-title">Featured Projects</h2>
+				<ProjectList projects={featuredProjects} />
+				<Link className={styles.allProjects} href="/projects">
+					View all projects
+					<ArrowIcon aria-hidden="true" />
+				</Link>
+			</section>
+			<section className={styles.section} aria-labelledby="career-title">
+				<div className={styles.heading}>
+					<h2 id="career-title">Career Journey & Roadmap</h2>
+					<Link className={styles.experienceLink} href="/experience">
+						<HistoryIcon aria-hidden="true" />
+						View all experience
+					</Link>
+				</div>
+				<CareerTimeline />
+			</section>
+			<section className={styles.socials} aria-label="Connect with Hiago">
+				{socialLinks.map(({ label, href, icon: Icon }) => (
+					<a
+						href={href}
+						key={label}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={`${label} (opens in a new tab)`}
+					>
+						<span>
+							<Icon aria-hidden="true" />
+						</span>
+						{label}
+					</a>
+				))}
+			</section>
+		</main>
+	);
 }

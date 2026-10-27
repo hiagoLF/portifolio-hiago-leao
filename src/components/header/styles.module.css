@@ -1,0 +1,45 @@
+.header {
+	position: fixed;
+	inset: 0 0 auto;
+	z-index: 20;
+	background: color-mix(in srgb, var(--background) 85%, transparent);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 24px color-mix(in srgb, var(--shadow) 35%, transparent);
+	padding-top: env(safe-area-inset-top);
+}
+.navigation {
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+.navigation a {
+	padding: 10px 18px;
+	border-radius: 8px;
+	color: var(--muted);
+	font-family: var(--font-mono);
+	font-size: 12px;
+	font-weight: 600;
+	transition:
+		background 180ms,
+		color 180ms;
+}
+.navigation a:hover {
+	background: var(--surface-high);
+	color: var(--foreground);
+}
+.navigation a[aria-current="page"] {
+	color: var(--primary);
+	background: color-mix(in srgb, var(--surface-high) 70%, transparent);
+	box-shadow: 0 0 16px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+@media (max-width: 420px) {
+	.navigation {
+		gap: 4px;
+		height: 64px;
+	}
+	.navigation a {
+		padding: 10px 14px;
+	}
+}
