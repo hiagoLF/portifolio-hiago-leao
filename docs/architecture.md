@@ -8,8 +8,8 @@
 - Use `src/components/` only for components reused across different screens. Follow the same
   component folder structure; avoid premature global abstractions.
 - Use colocated CSS Modules. Reserve `src/app/globals.css` for global styles and variables.
-- Centralize CSS colors as tokens in `src/app/globals.css`; derive opacity with `color-mix`.
-  Colors in constants files do not need tokens; define them directly.
+- Centralize CSS colors as tokens in `src/app/globals.css`; derive opacity with `color-mix`. Colors
+  in constants files do not need tokens; define them directly.
 - Store monochromatic SVG icons in `src/assets/icons/`. Use `currentColor` for all visible fills and
   strokes; `none` is allowed. Set color through JSX props or CSS.
 - Store illustrations in `src/assets/illustrations/` and logos in `src/assets/logos/`. These assets
