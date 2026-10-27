@@ -7,7 +7,7 @@ export default function ExperienceScreen() {
 			<h1 id="career-title" className={styles.title}>
 				Career Journey & Roadmap
 			</h1>
-			<CareerTimeline />
+			<CareerTimeline expanded />
 		</main>
 	);
 }
