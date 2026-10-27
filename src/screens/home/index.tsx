@@ -3,7 +3,7 @@ import Link from "next/link";
 import ArrowIcon from "@/assets/icons/arrow-right-alt.svg";
 import HistoryIcon from "@/assets/icons/history-edu.svg";
 import ProjectList from "@/components/project-list";
-import { designImages } from "@/constants/design-images";
+import { profile } from "@/constants/profile";
 import { featuredProjects } from "@/constants/projects";
 import { socialLinks } from "@/constants/social-links";
 import CoreTechnologies from "@/screens/home/components/core-technologies";
@@ -16,23 +16,19 @@ export default function HomeScreen() {
 			<section className={styles.hero} aria-labelledby="profile-title">
 				<div className={styles.avatar}>
 					<Image
-						src={designImages[0]}
-						alt="Hiago Leão Ferreira"
+						src={profile.image}
+						alt={profile.name}
 						width={176}
 						height={176}
-						unoptimized
-						priority
+						sizes="(max-width: 850px) 144px, 176px"
+						preload
 					/>
 				</div>
 				<div className={styles.bio}>
-					<span className={styles.eyebrow}>Frontend Architecture & Mobile</span>
-					<h1 id="profile-title">Hiago Leão Ferreira</h1>
-					<p className={styles.role}>Senior Frontend Software Engineer</p>
-					<p className={styles.description}>
-						Senior Frontend Engineer with 5+ years building high-impact mobile and web applications
-						with React Native, React, and TypeScript. Specializing in fluid micro-interactions,
-						rock-solid design systems, and resilient engineering that scales teams and products.
-					</p>
+					<span className={styles.eyebrow}>{profile.headline}</span>
+					<h1 id="profile-title">{profile.name}</h1>
+					<p className={styles.role}>{profile.role}</p>
+					<p className={styles.description}>{profile.description}</p>
 				</div>
 			</section>
 			<CoreTechnologies />
