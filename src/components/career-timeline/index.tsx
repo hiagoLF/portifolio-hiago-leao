@@ -1,7 +1,7 @@
 import { career } from "@/constants/career";
 import TechnologyTags from "@/components/technology-tags";
 import type { AccentStyle } from "@/types/portfolio";
-import styles from "@/screens/home/components/career-timeline/styles.module.css";
+import styles from "@/components/career-timeline/styles.module.css";
 
 export default function CareerTimeline() {
 	return (

@@ -7,7 +7,7 @@ import { designImages } from "@/constants/design-images";
 import { featuredProjects } from "@/constants/projects";
 import { socialLinks } from "@/constants/social-links";
 import CoreTechnologies from "@/screens/home/components/core-technologies";
-import CareerTimeline from "@/screens/home/components/career-timeline";
+import CareerTimeline from "@/components/career-timeline";
 import styles from "@/screens/home/styles.module.css";
 
 export default function HomeScreen() {
