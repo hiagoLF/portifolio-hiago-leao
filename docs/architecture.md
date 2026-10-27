@@ -29,3 +29,8 @@ import SearchIcon from "@/assets/icons/search.svg";
 
 <SearchIcon color="var(--foreground)" aria-label="Search" />;
 ```
+
+- Extract every visual card into a component, including media, channel, detail, and technology
+  cards.
+- Before implementing a new screen, delegate missing icon downloads to a subagent. Audit existing
+  icons first and reuse semantic equivalents; never download duplicate icons for the same meaning.

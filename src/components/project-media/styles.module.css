@@ -1,0 +1,30 @@
+.media {
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+.frame {
+	padding: clamp(16px, 4vw, 40px);
+	border-radius: 12px;
+	background: linear-gradient(
+		145deg,
+		color-mix(in srgb, var(--accent) 16%, var(--surface-lowest)),
+		var(--surface-lowest) 55%,
+		color-mix(in srgb, var(--accent) 8%, var(--surface-base))
+	);
+	box-shadow: var(--card-shadow);
+	overflow: hidden;
+}
+.media img,
+.media video {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 480px;
+	object-fit: contain;
+	border-radius: 8px;
+}
+
+.preview {
+	pointer-events: none;
+}

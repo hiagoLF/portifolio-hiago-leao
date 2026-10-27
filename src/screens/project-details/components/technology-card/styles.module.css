@@ -1,0 +1,44 @@
+.card {
+	padding: 20px;
+	border-radius: 12px;
+	background: var(--surface);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	min-width: 0;
+}
+.card h3 {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.card p {
+	color: var(--muted);
+	font-size: 13px;
+	line-height: 1.8;
+}
+.icon {
+	padding: 8px;
+	border-radius: 8px;
+	color: var(--accent);
+	background: color-mix(in srgb, var(--accent) 10%, transparent);
+	align-self: flex-start;
+}
+.card svg {
+	width: 24px;
+	height: 24px;
+}
+.card {
+	align-items: center;
+	text-align: center;
+	gap: 8px;
+}
+.card h3 {
+	font: 12px/1.6 var(--font-mono);
+}
+.card p {
+	font-size: 11px;
+}
+.icon {
+	align-self: center;
+	background: var(--surface-high);
+}

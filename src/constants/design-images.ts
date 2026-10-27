@@ -17,22 +17,4 @@ export const designImages = [
 		"Z2YqOmtZxWwrH1fGqz2QWKS2GTHDEyq-DY4vOJFGrJ-JhnO5EZZx8utFckaPs-nktD9MnD3vwEC5xqxa",
 		"kEFK52gD4tVpoXCsLaISNuD5xb4zPHn8gqg-CpSwjsMxiQeD4AQqiDdwjt4Q",
 	].join(""),
-	[
-		"https://lh3.googleusercontent.com/aida-public/AB6AXuACPhaRDSZp64ubPCS_KNorH5LBa2",
-		"l6WHEbcVW1N_5J7gJ7FppuksdCleGMYGhQ2IekHKdy53rLO2bbxottujhpVddvjQPxQz13Um0DcqRq3l",
-		"i6pRxUUS7QvzaSRFCfh6A8RGsYMTz17lttq9ti7f6d8H15o8iDqLCU7Da6pZUVHxbSG1E5dxzStoGWau",
-		"67F7EH0Ks2wVEBd6NZVM1YC5UIqW87BQDk-x2AG6w2imQBQfD-29e9s4qlCg",
-	].join(""),
-	[
-		"https://lh3.googleusercontent.com/aida-public/AB6AXuDR7L_gltn7tuM2n2BrMaXTtqdr62",
-		"-Ttji4RaCc-nvdjFEtQEVUqHlxNXib20Wse-muNLSec0FVENjvbK3lKfqiXpQghGYh1vd4BPdI1S1VRG",
-		"4O41eFCSutswE65Cg7_CmFLcYrT1DvCk8X82tmVYisOrtZJHs0Zx0vp1o5qPRVODCmZCvKeVUOnFTmhR",
-		"W7E0G2R9cNqqy04DURo1H-WonaO14t8ujwKxGBFNq0tpOybXasZbD07J8PdA",
-	].join(""),
-	[
-		"https://lh3.googleusercontent.com/aida-public/AB6AXuA0-sJ4CzWhJcIFF3E7IAlecCX0f4",
-		"5gFGQxN3VkEk4vG4-GPuSVWmp8PGmbfhr0q6-3IjhJK7js0-VepaMCI0kZ4OZ0oESLO_7C16ty_LgNU_",
-		"BBngGNSN2RqdRUm3zRHCkLJ95Xt6NokI3XoC7mqI_H6IV61C5UkrZnfXh1w87NEW_v0w3vRdvJMpUVOa",
-		"cvvNeNtSnrSJ0PHIEnqbAMNbqk7VdyGBsZnYUlO3ZWbsGSksTNRPU3z4djsA",
-	].join(""),
 ];

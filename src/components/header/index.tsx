@@ -11,7 +11,15 @@ export default function Header() {
 		<header className={styles.header}>
 			<nav aria-label="Main navigation" className={styles.navigation}>
 				{navigation.map(({ label, href }) => (
-					<Link key={href} href={href} aria-current={pathname === href ? "page" : undefined}>
+					<Link
+						key={href}
+						href={href}
+						aria-current={
+							pathname === href || (href !== "/" && pathname.startsWith(`${href}/`))
+								? "page"
+								: undefined
+						}
+					>
 						{label}
 					</Link>
 				))}
