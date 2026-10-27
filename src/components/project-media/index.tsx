@@ -35,8 +35,8 @@ export default function ProjectMedia({
 				<Image
 					src={project.imageUrl}
 					alt={`${project.title} interface`}
-					width={960}
-					height={640}
+					width={project.imageWidth ?? 960}
+					height={project.imageHeight ?? 640}
 					unoptimized
 					sizes="(max-width: 700px) 100vw, 900px"
 				/>

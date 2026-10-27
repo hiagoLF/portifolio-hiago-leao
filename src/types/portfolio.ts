@@ -6,6 +6,8 @@ export type Project = {
 	id: string;
 	slug: string;
 	imageUrl: string;
+	imageWidth?: number;
+	imageHeight?: number;
 	videoUrl: string | null;
 	title: string;
 	description: string;

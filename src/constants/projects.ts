@@ -1,5 +1,4 @@
-import { aurapay } from "@/constants/projects/aurapay";
-import { omnipulse } from "@/constants/projects/omnipulse";
+import { myLoveFlix } from "@/constants/projects/myloveflix";
 import type { Project } from "@/types/portfolio";
 
-export const featuredProjects: Project[] = [aurapay, omnipulse];
+export const featuredProjects: Project[] = [myLoveFlix];
