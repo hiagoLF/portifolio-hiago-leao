@@ -18,6 +18,7 @@
 }
 .timeline > li::before {
 	content: "";
+	box-sizing: border-box;
 	position: absolute;
 	left: -30px;
 	top: 8px;
@@ -25,6 +26,27 @@
 	height: 16px;
 	border: 2px solid var(--accent);
 	border-radius: 50%;
-	background: var(--background);
+	background: var(--surface-lowest);
 	box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+.timeline > li::after {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 13px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--accent);
+	pointer-events: none;
+}
+.timeline > li:first-child::after {
+	animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+	75%,
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
 }
