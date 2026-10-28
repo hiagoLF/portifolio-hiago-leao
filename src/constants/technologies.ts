@@ -4,7 +4,7 @@ import ExpoIcon from "@/assets/icons/expo.svg";
 import NextIcon from "@/assets/icons/next.svg";
 import NodeIcon from "@/assets/icons/hexagon.svg";
 import KotlinIcon from "@/assets/icons/kotlin.svg";
-import SwiftIcon from "@/assets/icons/bolt.svg";
+import SwiftIcon from "@/assets/icons/swift.svg";
 
 export const coreTechnologies = [
 	{ icon: ReactIcon, label: "React", color: "#4cd7f6" },
