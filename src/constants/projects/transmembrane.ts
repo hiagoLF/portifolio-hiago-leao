@@ -19,7 +19,7 @@ export const transmembraneSequencePrediction: Project = {
 		"internship at the Federal University of Bahia (UFBA), it combines a simple interface " +
 		"with probability-based scoring to help researchers select promising segments.",
 	imageUrl: "",
-	videoUrl: "/images/membrane-protein.mp4",
+	videoUrl: "/videos/membrane-protein.mp4",
 	label: "Bioinformatics research tool",
 	color,
 	channels: [
