@@ -1,5 +1,6 @@
 import BoltIcon from "@/assets/icons/bolt.svg";
 import ExpoIcon from "@/assets/icons/expo.svg";
+import GearIcon from "@/assets/icons/gear.svg";
 import GitHubIcon from "@/assets/icons/github.svg";
 import GridIcon from "@/assets/icons/grid-view.svg";
 import MobileIcon from "@/assets/icons/stay-current-portrait.svg";
@@ -60,7 +61,7 @@ export const myLoveFlix: Project = {
 			color,
 		},
 		{
-			icon: GridIcon,
+			icon: GearIcon,
 			title: "Technical approach",
 			description:
 				"Built with React Native and Expo, using Expo Router for simple, file-based " +

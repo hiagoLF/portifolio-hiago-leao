@@ -1,4 +1,5 @@
 import BoltIcon from "@/assets/icons/bolt.svg";
+import GearIcon from "@/assets/icons/gear.svg";
 import GridIcon from "@/assets/icons/grid-view.svg";
 import HealthIcon from "@/assets/icons/health-and-safety.svg";
 import LinkedInIcon from "@/assets/icons/linkedin.svg";
@@ -55,7 +56,7 @@ export const transmembraneSequencePrediction: Project = {
 			color,
 		},
 		{
-			icon: GridIcon,
+			icon: GearIcon,
 			title: "Technical approach",
 			description:
 				"Used Python, pandas, and Matplotlib to process known transmembrane segments " +
