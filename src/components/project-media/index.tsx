@@ -19,7 +19,7 @@ export default function ProjectMedia({
 			{project.videoUrl ? (
 				<video
 					src={project.videoUrl}
-					poster={project.imageUrl}
+					poster={project.imageUrl || undefined}
 					controls={controls}
 					className={controls ? undefined : styles.preview}
 					autoPlay
