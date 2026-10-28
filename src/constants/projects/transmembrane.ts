@@ -1,10 +1,12 @@
 import BoltIcon from "@/assets/icons/bolt.svg";
 import GearIcon from "@/assets/icons/gear.svg";
-import GridIcon from "@/assets/icons/grid-view.svg";
 import HealthIcon from "@/assets/icons/health-and-safety.svg";
 import LinkedInIcon from "@/assets/icons/linkedin.svg";
+import MatplotlibIcon from "@/assets/icons/matplotlib.svg";
 import NextIcon from "@/assets/icons/next.svg";
 import OpenIcon from "@/assets/icons/open-in-new.svg";
+import PandasIcon from "@/assets/icons/pandas.svg";
+import PythonIcon from "@/assets/icons/python.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import type { Project } from "@/types/portfolio";
 
@@ -78,10 +80,15 @@ export const transmembraneSequencePrediction: Project = {
 		},
 	],
 	stack: [
-		{ icon: GridIcon, label: "Python", description: "Protein data processing", color },
-		{ icon: GridIcon, label: "pandas", description: "Sequence dataset analysis", color },
-		{ icon: GridIcon, label: "Matplotlib", description: "Research data visualization", color },
 		{ icon: ReactIcon, label: "React", description: "Interactive web interface", color },
 		{ icon: NextIcon, label: "Next.js", description: "Web app and prediction algorithm", color },
+		{ icon: PythonIcon, label: "Python", description: "Protein data processing", color },
+		{ icon: PandasIcon, label: "pandas", description: "Sequence dataset analysis", color },
+		{
+			icon: MatplotlibIcon,
+			label: "Matplotlib",
+			description: "Research data visualization",
+			color,
+		},
 	],
 };
